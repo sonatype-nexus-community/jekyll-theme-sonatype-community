@@ -1,0 +1,38 @@
+/*
+ * Copyright (c) 2019-present Sonatype, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * Dark mode activation rules, in order of precedence:
+ *
+ * 1. Light mode by default
+ * 2. If prefers-color-scheme is set, follow that.
+ *   Note that prefers-color-scheme: light doesn't really do anything since light is already the default.
+ * 3. If nx-html--dark-mode or nx-html--light-mode is set, follow that class, regardless of prefers-color-scheme.
+ *   Setting both of those classes simultaneously is not advised but will result in dark mode.
+ * 4. If nx-html--enable-color-schemes is NOT set, always light mode
+ */
+@mixin dark-mode {
+  .nx-html--enable-color-schemes.nx-html--dark-mode &, &.nx-html--enable-color-schemes.nx-html--dark-mode {
+    @content;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .nx-html--enable-color-schemes:not(.nx-html--light-mode) &,
+    &.nx-html--enable-color-schemes:not(.nx-html--light-mode)  {
+      @content;
+    }
+  }
+}

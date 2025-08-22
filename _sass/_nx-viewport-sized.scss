@@ -1,0 +1,58 @@
+/*
+ * Copyright (c) 2019-present Sonatype, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+.nx-viewport-sized {
+  display: flex;
+  flex-direction: column;
+}
+
+.nx-viewport-sized__container, .nx-viewport-sized {
+  > * {
+    box-sizing: border-box;
+    flex: none;
+    margin-top: 0;
+    width: 100%;
+  }
+
+  > .MuiTooltip-popper {
+    width: auto;
+  }
+}
+
+// note: it is important that these properties appear below the nested block above for specificity reasons
+.nx-viewport-sized__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.nx-viewport-sized__container--adjacent {
+  align-items: stretch;
+  flex-direction: row;
+
+  > * {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: auto;
+  }
+}
+
+.nx-viewport-sized__container, .nx-viewport-sized__scrollable {
+  flex: auto;
+  min-height: 0;
+}
+
+.nx-viewport-sized__scrollable {
+  max-height: unset;
+}

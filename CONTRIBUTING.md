@@ -3,9 +3,8 @@
 It's great you're here and reading this guide, because we need volunteers to help keep this project active and alive for the greater benefit of everyone!
 
 - [Engaging with this project](#engaging-with-this-project)
-- [Develpoment Guidelines](#develpoment-guidelines)
+- [Development Guidelines](#development-guidelines)
   - [Coding Conventions](#coding-conventions)
-- [Testing](#testing)
 - [Submitting Contributions](#submitting-contributions)
 
 ## Engaging with this project
@@ -13,17 +12,11 @@ It's great you're here and reading this guide, because we need volunteers to hel
 TODO: Add links below to your repo's GitHub Issues and Discussions pages.
 
 Here are some important resources:
-- [GitHub Issues](#) - a place for bugs to be raised and feature requests made
-- [GitHub Discussions](#) - a place to discuss ideas or real-world usage
+- [GitHub Issues](https://github.com/sonatype-nexus-community/jekyll-theme-sonatype-community/issues) - a place for bugs to be raised and feature requests made
 
 ## Development Guidelines
 
-*TODO: Explain in detail what development standards must be adhered to when contributions are made.*
-
-*You might include:*
-- Testing requirements
-- Explanation of PR Checks
-- What to expect from a PR reviewer/approver (such as expected time to response)
+Check out https://jekyllrb.com/docs/themes/ for guideance.
 
 ### Coding Conventions
 
@@ -33,19 +26,6 @@ Here are some important resources:
   Here are some notes we found helpful in configuring a local environment to automatically sign git commits:
     - [GPG commit signature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification#gpg-commit-signature-verification)
     - [Telling Git about your GPG key](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key#telling-git-about-your-gpg-key)
-    
-- TODO: Explain code style, convention & quality standards (and any associated checks that will be run)
-
-## Testing
-
-*TODO: Explain in detail:*
-
-- How to run tests, including dependencies that might need installing or configuring
-- Environmental configuration that may be required
-- Consideration when writing tests (i.e. don't depend on *X*)
-
-*You might wish to break this out into different sub-sections if you have, for example, unit tests and integration tests with differing requirements.*
-
 
 ## Submitting Contributions
 

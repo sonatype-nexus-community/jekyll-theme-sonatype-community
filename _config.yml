@@ -1,0 +1,8 @@
+title: Sonatype Community theme
+description: Sonatype Community theme for GitHub Pages.
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-sonatype-community
+
+github:
+  url: https://github.com/sonatype-nexus-community/jekyll-theme-sonatype-community
