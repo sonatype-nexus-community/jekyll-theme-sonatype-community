@@ -45,16 +45,19 @@
             </div>
           </header>
           <div class="nx-tile-content">
-            {{ content }}
+            {{ content | toc }}
           </div>
         </section>
       </main>
         <footer class="nx-global-footer-2">
-          Copyright © 2008-present, Sonatype Inc. | Part of <a href="https://contribute.sonatype.com" target="_blank">Sonatype Community</a>.</span>
+          <span>Copyright © 2008-present, Sonatype Inc.</span>
           {% for item in site.menus.footer %}
-          <a class="nx-text-link" rel="" target="" href="{{ item.url }}" aria-disabled="false">
-            <span>{{ item.title }}</span>
-          </a>
+          <span>
+            {{ item.preText }}
+            <a class="nx-text-link" rel="" target="" href="{{ item.url }}" aria-disabled="false">
+              <span>{{ item.title }}</span>
+            </a>
+          </span>
           {% endfor %}
         </footer>
       </div>

@@ -5,4 +5,5 @@ gemspec
 
 group :jekyll_plugins do
    gem "jekyll-menus", :git => "https://github.com/forestryio/jekyll-menus.git"
+   gem 'jekyll-toc'
 end
