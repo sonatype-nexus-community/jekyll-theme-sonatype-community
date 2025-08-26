@@ -5,6 +5,7 @@ menus:
   main:
     title: Home
     weight: 1
+toc: true
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
