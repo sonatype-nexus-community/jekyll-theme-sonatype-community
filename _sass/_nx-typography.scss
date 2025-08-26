@@ -99,7 +99,7 @@
   max-width: var(--nx-width-text-wrapping);
 }
 
-.nx-h1 {
+.nx-h1, h1 {
   @include nx-text-helpers.bold;
   @extend %nx-heading;
 
@@ -109,7 +109,7 @@
   @include nx-container-helpers.container-horizontal;
 }
 
-.nx-h2 {
+.nx-h2, h2 {
   @include nx-text-helpers.semi-bold;
   @extend %nx-heading;
 
@@ -119,7 +119,7 @@
   @include nx-container-helpers.container-horizontal;
 }
 
-.nx-h3 {
+.nx-h3, h3 {
   @include nx-text-helpers.bold;
   @extend %nx-heading;
 
@@ -129,7 +129,7 @@
   @include nx-container-helpers.container-horizontal;
 }
 
-.nx-h4 {
+.nx-h4, h4 {
   @include nx-text-helpers.semi-bold;
   @extend %nx-heading;
 
@@ -139,7 +139,7 @@
   @include nx-container-helpers.container-horizontal;
 }
 
-.nx-p {
+.nx-p, p {
   @extend %nx-p;
 }
 

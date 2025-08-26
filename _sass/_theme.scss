@@ -13,28 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+@use 'nx-container-helpers';
+@use 'nx-text-helpers';
 
-@use 'fontawesome-svg';
+.site-title {
+    @include nx-text-helpers.semi-bold;
+    
+    color: var(--nx-color-text-dark);
+    max-width: var(--nx-width-text-wrapping);
+    font-size: var(--nx-font-size-heading-2);
+    line-height: var(--nx-font-size-heading-2);
+    margin-bottom: var(--nx-spacing-2x);
 
-@use "nx-variables";
-@use "nx-colors";
-@use "nx-color-swatches";
-@use "nx-globals";
-@use 'nx-typography';
-
-@use 'nx-page-header';
-@use 'nx-page-layout';
-@use 'nx-global-header';
-@use 'nx-global-footer-2';
-@use 'nx-page';
-@use 'nx-tile';
-@use 'nx-btn';
-@use 'nx-icon';
-@use 'nx-viewport-sized';
-
-@use 'components/NxGlobalHeader2';
-@use 'components/NxGlobalSidebar2NavigationLink';
-@use 'components/NxGlobalSidebar';
-@use 'components/NxGlobalSidebar2';
-
-@use 'theme';
+    @include nx-container-helpers.container-horizontal;
+}
